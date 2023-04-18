@@ -39,4 +39,4 @@ The controllers should contain enough comment for you to implement their basic f
   - The password is `password`
 
 ## Questions?
-If you have questions, please reach out to bofanxu@shepherdmoney.com
+If you have project related issues, feel free to raise an issue on the repository :D. If you have more private questions, please reach out to bofanxu@shepherdmoney.com
