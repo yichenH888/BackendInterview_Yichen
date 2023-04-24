@@ -111,9 +111,9 @@ public class CreditCardController {
      // is not associated with a card.
      try{
          for (UpdateBalancePayload updateBalancePayload : payload) {
-             CreditCard creditCard = creditCardRepository.findByNumber(updateBalancePayload.getCreditCardNumber());
-             System.out.println(updateBalancePayload);
-             System.out.println(creditCard);
+             
+             String cardNumber = updateBalancePayload.getCreditCardNumber();
+             CreditCard creditCard = creditCardRepository.findByNumber(cardNumber);
              List<BalanceHistory> balanceHistory = new ArrayList<>();
              balanceHistory = creditCard.getBalanceHistory();
              BalanceHistory newBalanceHistory = new BalanceHistory();
